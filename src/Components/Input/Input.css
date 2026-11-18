@@ -1,0 +1,75 @@
+.ds-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-spacing-xs);
+  font-family: var(--ds-font-family);
+  width: 100%;
+}
+
+.ds-input-label {
+  font-size: var(--ds-font-size-sm);
+  font-weight: 600;
+  color: var(--ds-color-text-primary);
+}
+
+.ds-input-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--ds-color-bg-default);
+  border: 1px solid var(--ds-color-border-default);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
+  transition:
+    border-color var(--ds-transition-fast),
+    box-shadow var(--ds-transition-fast);
+}
+
+/* Focus state handled purely by CSS */
+.ds-input-container:focus-within {
+  border-color: var(--ds-color-border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Error state */
+.ds-input-container--error {
+  border-color: var(--ds-color-border-error);
+}
+.ds-input-container--error:focus-within {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* Disabled state */
+.ds-input-container--disabled {
+  background-color: var(--ds-color-bg-subtle);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ds-input-field {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: var(--ds-font-size-md);
+  color: var(--ds-color-text-primary);
+  font-family: inherit;
+}
+
+.ds-input-field:disabled {
+  cursor: not-allowed;
+}
+
+.ds-input-icon {
+  color: var(--ds-color-text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.ds-input-message {
+  font-size: 13px;
+  color: var(--ds-color-text-secondary);
+}
+
+.ds-input-message--error {
+  color: var(--ds-color-border-error);
+}

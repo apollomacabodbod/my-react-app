@@ -1,0 +1,48 @@
+:root {
+  /* --- PRIMITIVES (The raw values) --- */
+  --ds-color-blue-500: #3b82f6;
+  --ds-color-blue-600: #2563eb;
+  --ds-color-blue-700: #1d4ed8;
+
+  --ds-color-gray-50: #f9fafb;
+  --ds-color-gray-100: #f3f4f6;
+  --ds-color-gray-300: #d1d5db;
+  --ds-color-gray-500: #6b7280;
+  --ds-color-gray-900: #111827;
+
+  --ds-color-red-500: #ef4444;
+  --ds-color-white: #ffffff;
+
+  /* --- SEMANTICS (How the color is used) --- */
+  --ds-color-bg-default: var(--ds-color-white);
+  --ds-color-bg-subtle: var(--ds-color-gray-50);
+
+  --ds-color-text-primary: var(--ds-color-gray-900);
+  --ds-color-text-secondary: var(--ds-color-gray-500);
+  --ds-color-text-inverse: var(--ds-color-white);
+
+  --ds-color-border-default: var(--ds-color-gray-300);
+  --ds-color-border-focus: var(--ds-color-blue-500);
+  --ds-color-border-error: var(--ds-color-red-500);
+
+  --ds-color-action-primary: var(--ds-color-blue-600);
+  --ds-color-action-primary-hover: var(--ds-color-blue-700);
+
+  /* --- SPACING & SIZING --- */
+  --ds-spacing-xs: 4px;
+  --ds-spacing-sm: 8px;
+  --ds-spacing-md: 12px;
+  --ds-spacing-lg: 16px;
+  --ds-spacing-xl: 24px;
+
+  --ds-radius-sm: 4px;
+  --ds-radius-md: 6px;
+  --ds-radius-lg: 8px;
+
+  --ds-font-family: system-ui, -apple-system, sans-serif;
+  --ds-font-size-sm: 14px;
+  --ds-font-size-md: 16px;
+
+  --ds-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ds-transition-fast: 150ms ease-in-out;
+}

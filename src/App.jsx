@@ -4,7 +4,13 @@ import { Button, Input } from "./Components";
 export default function App() {
   return (
     <div
-      style={{ padding: "40px", maxWidth: "500px", fontFamily: "sans-serif" }}
+      style={{
+        padding: "40px",
+        maxWidth: "500px",
+        fontFamily: "sans-serif",
+        backgroundColor: "#ffffff",
+        minHeight: "100vh"
+      }}
     >
       <h2>Real World Design System</h2>
 
@@ -33,7 +39,6 @@ export default function App() {
 
         <div style={{ display: "flex", gap: "12px" }}>
           <Button variant="primary">Save Changes</Button>
-          <Button variant="secondary">Cancel</Button>
           <Button variant="secondary">Cancel</Button>
           <Button variant="primary" loading>
             Processing...
